@@ -7,6 +7,11 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+:root {
+	--accent: #fcd303;
+	--dark-accent: #8a7300;
+  }
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -83,7 +88,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #fff;
+		background: #222;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -111,13 +116,13 @@ input, select, textarea {
 		-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		border-bottom: dotted 1px;
-		color: #49bf9d;
+		color: var(--dark-accent)
 		text-decoration: none;
 	}
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #49bf9d !important;
+			color: var(--dark-accent) !important;
 			text-decoration: none;
 		}
 
@@ -1841,7 +1846,7 @@ input, select, textarea {
 		input[type="email"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #49bf9d;
+			border-color: var(--dark-accent);
 		}
 
 	select {
@@ -1946,7 +1951,7 @@ input, select, textarea {
 
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
-			border-color: #49bf9d;
+			border-color: var(--dark-accent);
 		}
 
 	input[type="checkbox"] + label:before {
@@ -2071,7 +2076,8 @@ input, select, textarea {
 				-ms-transition: opacity 0.2s ease-in-out;
 				transition: opacity 0.2s ease-in-out;
 				border-radius: 0.35em;
-				border: solid 3px rgba(255, 255, 255, 0.5);
+				box-shadow: 0 0 10px 0 #ddd;
+				/* border: solid 3px rgba(255, 255, 255, 0.5); */
 				color: #fff;
 				content: 'View';
 				display: inline-block;
@@ -2464,17 +2470,17 @@ input, select, textarea {
 		input[type="reset"]:hover,
 		input[type="button"]:hover,
 		.button:hover {
-			border-color: #49bf9d;
-			color: #49bf9d !important;
+			border-color: var(--dark-accent);
+			color: var(--dark-accent) !important;
 		}
 
 		input[type="submit"]:active,
 		input[type="reset"]:active,
 		input[type="button"]:active,
 		.button:active {
-			background-color: rgba(73, 191, 157, 0.1);
-			border-color: #49bf9d;
-			color: #49bf9d !important;
+			background-color: #2e2b1b;
+			border-color: var(--dark-accent);
+			color: var(--dark-accent) !important;
 		}
 
 		input[type="submit"].icon,
@@ -2517,8 +2523,8 @@ input, select, textarea {
 		input[type="reset"].primary,
 		input[type="button"].primary,
 		.button.primary {
-			background-color: #49bf9d;
-			border-color: #49bf9d;
+			background-color: var(--dark-accent);
+			border-color: var(--dark-accent);
 			color: #ffffff !important;
 		}
 
@@ -2526,16 +2532,16 @@ input, select, textarea {
 			input[type="reset"].primary:hover,
 			input[type="button"].primary:hover,
 			.button.primary:hover {
-				background-color: #5cc6a7;
-				border-color: #5cc6a7;
+				background-color: #b5a13f;
+				border-color: #b5a13f;
 			}
 
 			input[type="submit"].primary:active,
 			input[type="reset"].primary:active,
 			input[type="button"].primary:active,
 			.button.primary:active {
-				background-color: #3eb08f;
-				border-color: #3eb08f;
+				background-color: var(--accent);
+				border-color: var(--accent);
 			}
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
@@ -2572,6 +2578,10 @@ input, select, textarea {
 			margin: 0;
 		}
 
+		.work-item a {
+			box-shadow: 0 0 20px 0px var(--accent);
+		}
+
 /* Header */
 
 	#header {
@@ -2591,9 +2601,9 @@ input, select, textarea {
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
 		justify-content: space-between;
-		background-color: #1f1815;
+		background-color: #070707;
 		background-attachment: scroll,								scroll;
-		background-image: url("images/overlay.png"), url("../../images/bg.jpg");
+		background-image: url("images/overlay.png"), url("../../images/Spore4.png ");
 		background-position: top left,							top left;
 		background-repeat: repeat,								no-repeat;
 		background-size: auto,								150%;
@@ -2698,7 +2708,7 @@ input, select, textarea {
 				border-top: 0;
 				margin-top: 0;
 				padding-top: 0;
-			}
+			} 
 
 /* Poptrox */
 
@@ -3077,8 +3087,8 @@ input, select, textarea {
 
 			#footer {
 				background-attachment: scroll;
-				background-color: #1f1815;
-				background-image: url("images/overlay.png"), url("../../images/bg.jpg");
+				background-color: #070707;
+				background-image: url("images/overlay.png"), url("../../images/Spore4.png");
 				background-position: top left,						bottom center;
 				background-repeat: repeat,							no-repeat;
 				background-size: auto,							cover;
