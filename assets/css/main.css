@@ -116,7 +116,7 @@ input, select, textarea {
 		-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		border-bottom: dotted 1px;
-		color: var(--dark-accent)
+		color: var(--dark-accent);
 		text-decoration: none;
 	}
 
@@ -2633,8 +2633,12 @@ input, select, textarea {
 			margin: 0 0 2em 0;
 		}
 
+		#header > .inner a {
+			box-shadow: 0 0 20px 0px var(--accent);
+		}
+
 		#header strong, #header b {
-			color: #ffffff;
+			color: var(--dark-accent);
 		}
 
 		#header h2, #header h3, #header h4, #header h5, #header h6 {
