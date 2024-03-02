@@ -1822,10 +1822,10 @@ input, select, textarea {
 		-webkit-appearance: none;
 		-ms-appearance: none;
 		appearance: none;
-		background: #f7f7f7;
+		background: #c7b67b;
 		border-radius: 0.35em;
 		border: solid 2px transparent;
-		color: inherit;
+		color: #000;
 		display: block;
 		outline: 0;
 		padding: 0 0.75em;
@@ -1963,22 +1963,22 @@ input, select, textarea {
 	}
 
 	::-webkit-input-placeholder {
-		color: #b2b2b2 !important;
+		color: #424242 !important;
 		opacity: 1.0;
 	}
 
 	:-moz-placeholder {
-		color: #b2b2b2 !important;
+		color: #424242 !important;
 		opacity: 1.0;
 	}
 
 	::-moz-placeholder {
-		color: #b2b2b2 !important;
+		color: #424242 !important;
 		opacity: 1.0;
 	}
 
 	:-ms-input-placeholder {
-		color: #b2b2b2 !important;
+		color: #424242 !important;
 		opacity: 1.0;
 	}
 
